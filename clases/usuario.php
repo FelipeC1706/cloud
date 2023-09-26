@@ -93,7 +93,7 @@ class usuario{
     }
     public static function iniciarSesion($usuario_usu, $password_usu){
         $conexion= new Conexion();
-        $consulta = $conexion->getConexion()->prepare('SELECT*FROM '.self::TABLA.' WHERE usuario= :usuario and password= :password');
+        $consulta = $conexion->getConexion()->prepare('SELECT*FROM Usuario WHERE usuario= :usuario and password= :password');
         $consulta->bindParam(':usuario',$usuario_usu);
         $consulta->bindParam(':password',$password_usu);
         $consulta->execute();
