@@ -6,7 +6,7 @@ echo('menso hpta');
 if($usuario==1){
     header('Location: ../Paginas/home.html');
 }else{
-    echo '<script>alert("No se pudo iniciar sesión. Verifique sus credenciales.");</script>';
+    echo '<script>alert("No se pudo iniciar sesión. Verifique sus credenciales.".$usuario);</script>';
     echo '<script>window.location.href = "../index.html";</script>';
 }
 
