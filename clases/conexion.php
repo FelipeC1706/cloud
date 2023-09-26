@@ -16,18 +16,13 @@
 //    } 
 //  } 
 
-// $pps = $con->getConexion()->prepare("SELECT *  FROM Persona");
-
-//       $pps->execute();
-
-//       echo json_encode(['Persona'=>$pps->fetchAll(PDO::FETCH_ASSOC)]);
 
 require_once 'setting.php';
 
-class Conexion{
+class conexion{
    private $conector = null;
 
-   public function __construct()
+   public function getConexion()
    {
 
          try{
@@ -43,5 +38,13 @@ class Conexion{
          
    }
 }
+
+   $con = new conexion();
+
+   $pps = $con->getConexion()->prepare("SELECT *  FROM Usuario");
+
+      $pps->execute();
+
+      echo json_encode(['Usuario'=>$pps->fetchAll(PDO::FETCH_ASSOC)]);
 
 ?>
