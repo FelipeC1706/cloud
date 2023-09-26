@@ -2,6 +2,7 @@
 require_once '../clases/usuario.php';
 $datos= array($_POST["usuario"],$_POST["password"]);
 $usuario = usuario::iniciarSesion($datos[0],$datos[1]);
+echo('menso hpta');
 if($usuario==1){
     header('Location: ../Paginas/home.html');
 }else{
