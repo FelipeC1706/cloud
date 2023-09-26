@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'Park-fast'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BE76D40D3A374980AE9E7EA5EA9CB4A9 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8A6C02D89FAC4458ADD57C80E0822F57 }}
           package: .
