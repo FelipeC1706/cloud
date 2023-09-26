@@ -27,7 +27,7 @@ require_once 'setting.php';
 class Conexion{
    private $conector = null;
 
-   public function getConexion()
+   public function __construct()
    {
 
          try{
