@@ -6,7 +6,7 @@ class usuario{
     private $apellido_usu;
     private $usuario_usu;
     private $password_usu;
-    const TABLA = 'usuario';
+    const TABLA = 'Usuario';
 
     public function getId(){
         return $this->id_usu;
