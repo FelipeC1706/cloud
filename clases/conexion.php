@@ -24,7 +24,7 @@
 
 require_once 'setting.php';
 
-class conexion{
+class Conexion{
    private $conector = null;
 
    public function getConexion()
@@ -44,10 +44,4 @@ class conexion{
    }
 }
 
-   $con = new conexion();
-
-   if($con->getConexion() != null){
-      
-      echo "conexion Exitosa";
-   }
 ?>
